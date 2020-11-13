@@ -1,0 +1,17 @@
+.footer-bg {
+    background-color: #2B99F2;
+    color: #FFF;
+}
+
+.footer-heading {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 60px;
+    margin: 0px;
+}
+
+.white-bg {
+    background-color: #FFF;
+}
