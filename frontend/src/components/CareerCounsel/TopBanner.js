@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'reactstrap';
-import championCVBanner from '../svg/championCVBanner.svg';
+import careerCounselBanner from '../svg/careerCounselBanner.svg';
 
 function TopBanner() {
     return (
@@ -8,12 +8,12 @@ function TopBanner() {
         <div className="mx-md-5 mt-3">
             <div className="row m-0">
                 <div className="offset-md-1 col-md-5 px-md-5 mt-5">
-                    <h1>Champion CV</h1>
+                    <h1>Your Career Is Your Life.</h1>
                     <br />
                     <p className="text-grey">
-                        Does your CV tell your story?
+                        Are you stuck in taking a right and informed decision?
                         <br /><br />
-                        Connect with our industry experts and get your amazing portfolio built
+                        Counsel with our team of experts consisting of business leaders and career counsellors.
                     </p>
                     <br />
                     <Button color="primary" className="rounded-button">
@@ -21,7 +21,7 @@ function TopBanner() {
                     </Button>
                 </div>
                 <div className="col-md-6 px-5">
-                    <img src={championCVBanner} alt="svg" className="home-right-img" />
+                    <img src={careerCounselBanner} alt="svg" className="home-right-img" />
                 </div>
             </div>
         </div>

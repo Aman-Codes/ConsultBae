@@ -1,8 +1,8 @@
 import React from 'react';
 
-import upload from '../svg/upload.svg';
-import portfolio from '../svg/portfolio.svg';
-import getCV from '../svg/getCV.svg';
+import reachOut from '../svg/reachOut.svg';
+import connect from '../svg/connect.svg';
+import expert from '../svg/expert.svg';
 
 function CardBanner() {
   return (
@@ -15,30 +15,30 @@ function CardBanner() {
         <div className="row mx-md-5">
             <div className="col-md-4 p-3 ">
                 <div className="service-card minh-300">
-                    <img src={upload} alt="upload svg" className="card-svg-image m-3" />
-                    <h3>Upload Resume</h3>
+                    <img src={reachOut} alt="reachOut svg" className="card-svg-image m-3" />
+                    <h3>Reach Out</h3>
                     <p className="text-grey mt-3">
-                        Upload your existing resume and relax
+                        Fill in your details and relax
                     </p>
                 </div>
             </div>
 
             <div className="col-md-4 p-3">
                 <div className="service-card minh-300">
-                    <img src={portfolio} alt="portfolio svg" className="card-svg-image m-3" />
-                    <h3>Chanpion CV</h3>
+                    <img src={connect} alt="connect svg" className="card-svg-image m-3" />
+                    <h3>Understand and Connect</h3>
                     <p className="text-grey mt-3">
-                        Our expert will get in touch with you to work and finalise your portfolio
+                        Basic discussion on your story and directing you to our right expert
                     </p>
                 </div>
             </div>
 
             <div className="col-md-4 p-3">
                 <div className="service-card minh-300">
-                    <img src={getCV} alt="getCV svg" className="card-svg-image m-3" />
-                    <h3>Career Counsel</h3>
+                    <img src={expert} alt="expert svg" className="card-svg-image m-3" />
+                    <h3>Counsel with Expert</h3>
                     <p className="text-grey mt-3">
-                        Process the payment and check your inbox
+                        Detailed discussion with our experts
                     </p>
                 </div>
             </div>

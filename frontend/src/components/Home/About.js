@@ -4,7 +4,7 @@ function About() {
     return (
         <section className="home-services">
         <div className="text-center mx-3">
-            <h1> About Consultbae</h1>
+            <h1> About ConsultBae</h1>
             <div className="stroke-line mx-auto"></div>
             <br />
             <p className="text-grey">

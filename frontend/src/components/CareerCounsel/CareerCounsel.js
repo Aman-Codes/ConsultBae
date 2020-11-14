@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -5,9 +6,9 @@ import TopBanner from './TopBanner';
 import CardBanner from './CardBanner';
 import About from './About';
 
-import './ChampionCV.css';
+import './CareerCounsel.css';
 
-function ChampionCV() {
+function CareerCounsel() {
     return (
         <div>
             <Header />
@@ -26,4 +27,4 @@ function ChampionCV() {
     );
 }
 
-export default ChampionCV;
+export default CareerCounsel;
