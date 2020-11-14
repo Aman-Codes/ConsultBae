@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'reactstrap';
-import careerCounselBanner from '../svg/careerCounselBanner.svg';
+import recruitmentBanner from '../svg/recruitmentBanner.svg';
 
 function TopBanner() {
     return (
@@ -8,12 +8,13 @@ function TopBanner() {
         <div className="mx-md-5 mt-3">
             <div className="row m-0">
                 <div className="offset-md-1 col-md-5 px-md-5 mt-5">
-                    <h1>Your Career Is Your Life.</h1>
+                    <h1>Accelerating Recruitment</h1>
                     <br />
                     <p className="text-grey">
-                        Are you stuck in taking a right and informed decision?
+                        Are you facing the prime challenge of delayed hiring closures and wrong cultural fit candidates? 
+                        Let’s decode it together with ConsultBae.
                         <br /><br />
-                        Counsel with our team of experts consisting of business leaders and career counsellors.
+                        Connect with our recruitment specialists. 
                     </p>
                     <br />
                     <Button color="primary" className="rounded-button">
@@ -21,7 +22,7 @@ function TopBanner() {
                     </Button>
                 </div>
                 <div className="col-md-6 px-5">
-                    <img src={careerCounselBanner} alt="svg" className="home-right-img" />
+                    <img src={recruitmentBanner} alt="svg" className="home-right-img" />
                 </div>
             </div>
         </div>

@@ -26,7 +26,7 @@ function CardBanner() {
             <div className="col-md-4 p-3">
                 <div className="service-card">
                     <img src={championCV} alt="championCV svg" className="card-svg-image m-md-3" />
-                    <h3>Chanpion CV</h3>
+                    <h3>Champion CV</h3>
                     <p className="text-grey mt-3">
                         Transform your resume into an impressive portfolio
                     </p>

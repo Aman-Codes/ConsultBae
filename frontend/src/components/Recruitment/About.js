@@ -11,8 +11,8 @@ function About() {
                         <div className="stroke-line"></div>
                         <br />
                         <p className="text-grey">
-                            ConsultBae’s specially designed portfolio helps you to grab the attention of employers and open doors for new opportunities. 
-                            Most importantly, we guide you in selling your strongest skills.
+                            Talent hiring is an intensive and time-taking process. 
+                            ConsultBae is your strategic recruitment partner that lets you focus on determining the best course for your business without worrying about execution. 
                         </p>
                         <br />
                         <Button outline color="primary" className="rounded-button">
@@ -27,27 +27,27 @@ function About() {
                             <h3 className="text-blue">We,</h3>
                             <div className="m-2">
                                 <i className="fa fa-check" aria-hidden="true"></i>&emsp;
-                                Quickly separate wheat from chaff
+                                Do culture centric sourcing
                             </div>
                             <div className="m-2">
                                 <i className="fa fa-check" aria-hidden="true"></i>&emsp;
-                                Watch for potential red flags
+                                Use advanced new age technology.
                             </div>
                             <div className="m-2">
                                 <i className="fa fa-check" aria-hidden="true"></i>&emsp;
-                                Tailored portfolio by experts
+                                Reduce the hiring TAT exponentially.
                             </div>
                             <div className="m-2">
                                 <i className="fa fa-check" aria-hidden="true"></i>&emsp;
-                                Pay attention to word choice
+                                Screen via Industry Veterans.
                             </div>
                             <div className="m-2">
                                 <i className="fa fa-check" aria-hidden="true"></i>&emsp;
-                                Get the right content in place
+                                Provide quality pre-vetted candidates.
                             </div>
                             <div className="m-2">
                                 <i className="fa fa-check" aria-hidden="true"></i>&emsp;
-                                Take the current hiring market into account
+                                Stay together till onboarding is complete
                             </div>                            
                         </div>
                     </div>

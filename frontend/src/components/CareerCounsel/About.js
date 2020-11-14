@@ -23,7 +23,7 @@ function About() {
                 <div className="col-md-5"> 
                     <div className="my-5 my-md-5 px-md-0 mr-md-5 py-md-5">
                         <div className="service-card">
-                            <h3>We,</h3>
+                            <h3 className="text-blue">We,</h3>
                             <div className="m-2">
                                 <i className="fa fa-check" aria-hidden="true"></i>&emsp;
                                 Evaluate career aspirations.

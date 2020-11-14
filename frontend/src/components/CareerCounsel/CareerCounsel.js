@@ -5,6 +5,7 @@ import Footer from '../Footer/Footer';
 import TopBanner from './TopBanner';
 import CardBanner from './CardBanner';
 import About from './About';
+import CareerCounselPopup from '../Popup/CareerCounselPopup';
 
 import './CareerCounsel.css';
 
@@ -15,6 +16,7 @@ function CareerCounsel() {
             <TopBanner />
             <CardBanner />
             <About />
+            <CareerCounselPopup />
             {/* <br />
             <br />
             <br />

@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer';
 import TopBanner from './TopBanner';
 import CardBanner from './CardBanner';
 import About from './About';
+import ChampionCVPopup from '../Popup/ChampionCVPopup';
 
 import './ChampionCV.css';
 
@@ -14,6 +15,7 @@ function ChampionCV() {
             <TopBanner />
             <CardBanner />
             <About />
+            <ChampionCVPopup />
             {/* <br />
             <br />
             <br />
