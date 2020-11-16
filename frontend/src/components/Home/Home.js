@@ -12,7 +12,7 @@ import './Home.css';
 function Home() {
     return (
         <div>
-            {/* <Header /> */}
+            <Header />
             <TopBanner />
             <Services />
             <CardBanner />

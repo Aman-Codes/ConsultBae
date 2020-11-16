@@ -7,11 +7,11 @@ import consultBae from '../svg/consultBae.svg';
 import './Header.css';
 
 const Header = ({ children, match, history }) =>{
-    const isActive = path => {
-        if (match.path === path) {
-            return { color: '#333' };
-        } else {
-            return { color: 'rgba(0,0,0,.5)' };
+    const isActive=(path)=>{
+        if(window.location.pathname===path){
+          return true;
+        }else{
+          return false;
         }
     };
 
@@ -22,10 +22,10 @@ const Header = ({ children, match, history }) =>{
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
-                <Nav.Link href="/" style={isActive('/')} >Home</Nav.Link>
-                <Nav.Link href="/recruitment" style={isActive('/')}>Recruitment</Nav.Link>
-                <Nav.Link href="/championcv" style={isActive('/')}>Champion CV</Nav.Link>
-                <Nav.Link href="/careercounsel" style={isActive('/')}>Career Counsel</Nav.Link>
+                <Nav.Link href="/" className={isActive('/') ? "active": ""} >Home</Nav.Link>
+                <Nav.Link href="/recruitment" className={isActive('/recruitment') ? "active": ""}>Recruitment</Nav.Link>
+                <Nav.Link href="/championcv" className={isActive('/championcv') ? "active": ""}>Champion CV</Nav.Link>
+                <Nav.Link href="/careercounsel" className={isActive('/careercounsel') ? "active": ""}>Career Counsel</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
             </Navbar>

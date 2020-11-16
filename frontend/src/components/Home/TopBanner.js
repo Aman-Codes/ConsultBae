@@ -16,7 +16,7 @@ function TopBanner() {
                         Learn More <i className="fa fa-long-arrow-down" aria-hidden="true"></i>
                     </Button>
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-7">
                     <img src={homeBanner} alt="svg" className="home-right-img" />
                 </div>
             </div>

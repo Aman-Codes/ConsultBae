@@ -6,15 +6,16 @@ import getCV from '../svg/getCV.svg';
 
 function CardBanner() {
   return (
-    <section className="m-0 p-0">
-        <div className="text-center">
-            <h1> How it works ?</h1>
+    <section className="text-center side-margin top-margin container">
+        <div>
+            <h1 id="services"> How it works ?</h1>
             <div className="stroke-line mx-auto"></div>
             <br />
         </div>
-        <div className="row mx-md-5">
-            <div className="col-md-4 p-3 ">
-                <div className="service-card minh-300">
+        <div className="row m-0">
+
+        <div className="col-md-4 p-3 d-flex align-items-stretch">
+                <div className="service-card flex-fill">
                     <img src={upload} alt="upload svg" className="card-svg-image m-3" />
                     <h3>Upload Resume</h3>
                     <p className="text-grey mt-3">
@@ -23,9 +24,9 @@ function CardBanner() {
                 </div>
             </div>
 
-            <div className="col-md-4 p-3">
-                <div className="service-card minh-300">
-                    <img src={portfolio} alt="portfolio svg" className="card-svg-image m-3" />
+            <div className="col-md-4 p-3 d-flex align-items-stretch">
+                <div className="service-card flex-fill">
+                <img src={portfolio} alt="portfolio svg" className="card-svg-image m-3" />
                     <h3>Chanpion CV</h3>
                     <p className="text-grey mt-3">
                         Our expert will get in touch with you to work and finalise your portfolio
@@ -33,8 +34,8 @@ function CardBanner() {
                 </div>
             </div>
 
-            <div className="col-md-4 p-3">
-                <div className="service-card minh-300">
+            <div className="col-md-4 p-3 d-flex align-items-stretch">
+                <div className="service-card flex-fill">
                     <img src={getCV} alt="getCV svg" className="card-svg-image m-3" />
                     <h3>Career Counsel</h3>
                     <p className="text-grey mt-3">

@@ -6,14 +6,12 @@ import CardBanner from './CardBanner';
 import About from './About';
 import ChampionCVPopup from '../Popup/ChampionCVPopup';
 
-import './ChampionCV.css';
-
 function ChampionCV() {
     const [show, setShow] = useState(false);
     return (
         <div>
-            {/* <Header /> */}
-            <TopBanner show={show} setShow={setShow}/>
+            <Header />
+            <TopBanner />
             <CardBanner />
             <About show={show} setShow={setShow} />
             <ChampionCVPopup show={show} setShow={setShow}/>

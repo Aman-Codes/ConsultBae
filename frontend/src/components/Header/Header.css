@@ -16,3 +16,9 @@
 .navbar-nav {
     margin-right: 6vw !important;
 }
+
+.active {
+    color: #2A1B4B !important;
+    text-decoration: underline !important;
+    font-weight: bold !important;
+}

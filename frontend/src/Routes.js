@@ -11,14 +11,14 @@ const Routes = () => {
     return (
         <Fragment>
             <BrowserRouter>
-                <Header>
+                {/* <Header> */}
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/championcv" component={ChampionCV} />
                     <Route exact path="/careercounsel" component={CareerCounsel} />
                     <Route exact path="/recruitment" component={Recruitment} />
                 </Switch>
-                </Header>
+                {/* </Header> */}
             </BrowserRouter>
         </Fragment>   
     );

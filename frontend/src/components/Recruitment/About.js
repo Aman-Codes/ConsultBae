@@ -1,12 +1,16 @@
 import React from 'react';
 import { Button } from 'reactstrap';
+import bg3 from '../svg/bg3.svg';
 
 function About(props) {
     return (
-        <section>
+        <section className="side-margin top-margin">
+            <div>
+            <img src={bg3} alt="background svg" className="background-svg-3"/>
+            </div>
             <div className="row m-0">
-                <div className="offset-md-1 col-md-6"> 
-                    <div className="p-md-5 m-md-5 my-5">
+                <div className="col-md-7"> 
+                    <div className="p-md-5 my-5">
                         <h1>What’s make ConsultBae super effective?</h1>
                         <div className="stroke-line"></div>
                         <br />
@@ -53,7 +57,6 @@ function About(props) {
                     </div>
                 </div>
             </div>
-
         </section>
     );
 }

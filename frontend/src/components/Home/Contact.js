@@ -34,11 +34,11 @@ function Contact() {
             }
         })
             .then(response => {
-                console.log('Respone fron server ', response);
+                //console.log('Respone fron server ', response);
                 toast.success('Successfully submitted form');
             })
             .catch(error => {
-                console.log('Respone fron server ', error);
+                //console.log('Respone fron server ', error);
                 toast.error("An Error occured");
             });
     };
