@@ -56,7 +56,7 @@ function Contact() {
             <h1 className="text-center"> Contact Us</h1>            
             <div className="stroke-line mx-auto"></div>
             <br />
-            <div className="contact-form">
+            <div className="contact-form m-2">
                 <div className="row m-0 text-left">
                     <div className="col-md-6 p-5">
                         <p>

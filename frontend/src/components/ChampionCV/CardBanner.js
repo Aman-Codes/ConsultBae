@@ -27,7 +27,7 @@ function CardBanner() {
             <div className="col-md-4 p-3 d-flex align-items-stretch">
                 <div className="service-card flex-fill">
                 <img src={portfolio} alt="portfolio svg" className="card-svg-image m-3" />
-                    <h3>Chanpion CV</h3>
+                    <h3>Champion CV</h3>
                     <p className="text-grey mt-3">
                         Our expert will get in touch with you to work and finalise your portfolio
                     </p>
