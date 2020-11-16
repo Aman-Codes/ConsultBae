@@ -7,7 +7,7 @@ import careerCounsel from '../svg/careerCounsel.svg';
 
 function CardBanner() {
   return (
-    <section className="text-center side-margin top-margin container">
+    <section className="text-center top-margin container">
         <div className="row m-0">
             <div className="col-md-4 p-3 d-flex align-items-stretch">
                 <div className="service-card flex-fill">

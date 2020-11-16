@@ -6,7 +6,7 @@ import expert from '../svg/expert.svg';
 
 function CardBanner() {
   return (
-    <section className="text-center side-margin top-margin container">
+    <section className="text-center top-margin container">
         <div>
             <h1 id="services"> How it works ?</h1>
             <div className="stroke-line mx-auto"></div>
