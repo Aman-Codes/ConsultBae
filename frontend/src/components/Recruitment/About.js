@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'reactstrap';
 
-function About() {
+function About(props) {
     return (
         <section>
             <div className="row m-0">
@@ -15,7 +15,7 @@ function About() {
                             ConsultBae is your strategic recruitment partner that lets you focus on determining the best course for your business without worrying about execution. 
                         </p>
                         <br />
-                        <Button outline color="primary" className="rounded-button">
+                        <Button outline color="primary" className="rounded-button" onClick={() => props.setShow(true)}>
                             Try ConsultBae <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </Button>{' '}
                         <br />

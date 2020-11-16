@@ -1,0 +1,10 @@
+align text
+navbar
+side spacing
+fixed navbar
+hover effect on nabar underline bold 
+container size same
+
+
+fixed svg
+fixed links

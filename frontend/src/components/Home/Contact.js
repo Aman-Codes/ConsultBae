@@ -1,13 +1,58 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
 import bg1 from '../svg/bg1.svg';
 import bg2 from '../svg/bg2.svg';
 
 function Contact() {
+    const [values, setValues] = useState({
+        name: '',
+        email:'',
+        message: '',
+    });
+
+    const {
+        name,
+        email,
+        message,
+    } = values;
+
+    const handleChange = name => event => {
+        setValues({ ...values, [name]: event.target.value });
+    };
+
+    const clickSubmit = event => {
+        event.preventDefault();
+        axios({
+            method: 'POST',
+            url: `${process.env.REACT_APP_API}/api/contact`,
+            data: {        
+                name,
+                email,
+                message,
+            }
+        })
+            .then(response => {
+                console.log('Respone fron server ', response);
+                toast.success('Successfully submitted form');
+            })
+            .catch(error => {
+                console.log('Respone fron server ', error);
+                toast.error("An Error occured");
+            });
+    };
+
     return (
         <section className="home-services">
-        <div >
-            {/* <img src={bg1} alt="background svg" className="background-svg-1"/> */}
+        <div>
+            <ToastContainer />
+            <div>
+            <img src={bg1} alt="background svg" className="background-svg-1"/>
+            </div>      
+            <div>
+            <img src={bg2} alt="background svg" className="background-svg-2"/>
+            </div>       
             <h1 className="text-center"> Contact Us</h1>            
             <div className="stroke-line mx-auto"></div>
             <br />
@@ -19,21 +64,38 @@ function Contact() {
                         </p>
                         <Form>
                             <FormGroup>
-                                {/* <Label for="name">Name</Label> */}
-                                <Input type="text" name="name" id="name" placeholder="Name" />
+                                <Input 
+                                    type="text" 
+                                    name="name" 
+                                    id="name" 
+                                    placeholder="Name" 
+                                    defaultValue={name}
+                                    onChange={handleChange('name')}  
+                                />
                             </FormGroup>
                             <FormGroup>
-                                {/* <Label for="email">Email Address</Label> */}
-                                <Input type="email" name="email" id="email" placeholder="Email Address" />
+                                <Input 
+                                    type="email" 
+                                    name="email" 
+                                    id="email" 
+                                    placeholder="Email Address" 
+                                    defaultValue={email}
+                                    onChange={handleChange('email')}
+                                />
                             </FormGroup>
                             <FormGroup>
-                                {/* <Label for="message">Message</Label> */}
-                                {/* <Input type="text" name="message" id="message" placeholder="Your Message" /> */}
-                                <Input type="textarea" name="message" id="message" placeholder="Your Message"/>
+                                <Input 
+                                    type="textarea" 
+                                    name="message" 
+                                    id="message" 
+                                    placeholder="Your Message"
+                                    defaultValue={message}
+                                    onChange={handleChange('message')}
+                                />
                             </FormGroup>
                         </Form>
                         <br />
-                        <Button outline color="primary" className="rounded-button">
+                        <Button outline color="primary" className="rounded-button" onClick={clickSubmit}>
                             Send
                         </Button>{' '}
                         
@@ -56,7 +118,7 @@ function Contact() {
                         </div>                    
                     </div>
                 </div>
-            </div>
+            </div>            
         </div>
         </section>
     );

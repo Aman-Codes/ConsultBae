@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'reactstrap';
 import recruitmentBanner from '../svg/recruitmentBanner.svg';
 
-function TopBanner() {
+function TopBanner(props) {
     return (
         <section>
         <div className="mx-md-5 mt-3">
@@ -17,7 +17,7 @@ function TopBanner() {
                         Connect with our recruitment specialists. 
                     </p>
                     <br />
-                    <Button color="primary" className="rounded-button">
+                    <Button color="primary" className="rounded-button" onClick={() => props.setShow(true)}>
                         Learn More &emsp;<i className="fa fa-long-arrow-down" aria-hidden="true"></i>
                     </Button>
                 </div>

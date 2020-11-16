@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import TopBanner from './TopBanner';
@@ -10,20 +10,14 @@ import RecruitmentPopup from '../Popup/RecruitmentPopup';
 import './Recruitment.css';
 
 function Recruitment() {
+    const [show, setShow] = useState(false);
     return (
         <div>
-            <Header />
-            <TopBanner />
+            {/* <Header /> */}
+            <TopBanner show={show} setShow={setShow}/>
             <CardBanner />
-            <About />
-            <RecruitmentPopup />
-            {/* <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br /> */}
+            <About show={show} setShow={setShow}/>
+            <RecruitmentPopup show={show} setShow={setShow}/>
             <Footer />
         </div>
     );

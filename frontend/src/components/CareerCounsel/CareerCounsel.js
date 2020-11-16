@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import TopBanner from './TopBanner';
@@ -10,20 +10,14 @@ import CareerCounselPopup from '../Popup/CareerCounselPopup';
 import './CareerCounsel.css';
 
 function CareerCounsel() {
+    const [show, setShow] = useState(false);
     return (
         <div>
-            <Header />
-            <TopBanner />
+            {/* <Header /> */}
+            <TopBanner show={show} setShow={setShow}/>
             <CardBanner />
-            <About />
-            <CareerCounselPopup />
-            {/* <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br /> */}
+            <About show={show} setShow={setShow}/>
+            <CareerCounselPopup show={show} setShow={setShow}/>
             <Footer />
         </div>
     );
