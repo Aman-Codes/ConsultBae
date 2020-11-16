@@ -111,10 +111,15 @@ function Contact() {
                             <i className="fa fa-envelope" aria-hidden="true"></i>  &emsp;
                             contact@consultbae.com
                             <br /> <br />
-                            <i className="fa fa-youtube-play" aria-hidden="true"></i> &emsp;
-                            <i className="fa fa-instagram" aria-hidden="true"></i> &emsp;
-                            <i className="fa fa-facebook" aria-hidden="true"></i> &emsp;
-                            <i className="fa fa-twitter" aria-hidden="true"></i> &emsp;
+                            <div className="black-link">
+                                <a href="https://www.linkedin.com/company/consultbae/">
+                                    <i className="fa fa-linkedin" aria-hidden="true"></i>
+                                </a> &emsp;
+                                <i className="fa fa-instagram" aria-hidden="true"></i> &emsp;
+                                <i className="fa fa-facebook" aria-hidden="true"></i> &emsp;
+                                <i className="fa fa-twitter" aria-hidden="true"></i> &emsp;
+                            </div>
+
                         </div>                    
                     </div>
                 </div>

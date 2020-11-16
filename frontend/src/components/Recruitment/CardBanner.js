@@ -9,8 +9,9 @@ function CardBanner() {
   return (
     <section className="text-center top-margin container" >
         <div>
-            <h1 id="services"> How it works ?</h1>
+            <h1> How it works ?</h1>
             <div className="stroke-line mx-auto"></div>
+            <div class="anchor" id="services"></div>
             <br />
         </div>
         <div className="row m-0">

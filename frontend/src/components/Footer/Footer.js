@@ -38,10 +38,14 @@ function Footer() {
                     <i className="fa fa-envelope-o" aria-hidden="true"></i> contact@consultbae.com
                     <br />
                     <h1 className="footer-heading">Follow us</h1>
-                    <i className="fa fa-youtube-play" aria-hidden="true"></i> &emsp;
-                    <i className="fa fa-instagram" aria-hidden="true"></i> &emsp;
-                    <i className="fa fa-facebook" aria-hidden="true"></i> &emsp;
-                    <i className="fa fa-twitter" aria-hidden="true"></i> &emsp;
+                    <div className="white-link">
+                        <a href="https://www.linkedin.com/company/consultbae/">
+                            <i className="fa fa-linkedin" aria-hidden="true"></i>
+                        </a> &emsp;
+                        <i className="fa fa-instagram" aria-hidden="true"></i> &emsp;
+                        <i className="fa fa-facebook" aria-hidden="true"></i> &emsp;
+                        <i className="fa fa-twitter" aria-hidden="true"></i> &emsp;
+                    </div>
                 </div>   
                 <br/>             
             </div>

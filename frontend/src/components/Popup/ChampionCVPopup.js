@@ -5,7 +5,7 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import './Popup.css';
 
-function ChampionCVPopup(props) {
+function ChampionCVPopup(props) {    
     const [values, setValues] = useState({
         name: '',
         email:'',
@@ -103,7 +103,7 @@ function ChampionCVPopup(props) {
                                         onChange={handleChange('phone')}
                                     />
                                 </FormGroup>
-                                <FormGroup>
+                                {/* <FormGroup>
                                     <Label for="file"> Upload Resume</Label>
                                     <Input 
                                         type="file" 
@@ -112,9 +112,13 @@ function ChampionCVPopup(props) {
                                         defaultValue={file}
                                         onChange={handleSelectedFile}
                                     />
-                                </FormGroup>
+                                </FormGroup> */}
                             </Form>
                             <br />
+                            <label for="file-upload" class="custom-file-upload btn btn-primary rounded-button">
+                                <i class="fa fa-cloud-upload"></i> Upload Resume
+                            </label>
+                            <input id="file-upload" type="file"  onChange={handleSelectedFile}  />
                             {/* <Button outline color="primary" className="rounded-button">
                                 Upload Resume <i className="fa fa-cloud-upload" aria-hidden="true"></i>
                             </Button>{' '} */}
