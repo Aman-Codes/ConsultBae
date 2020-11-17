@@ -11,7 +11,7 @@ function CardBanner() {
         <div>
             <h1> How it works ?</h1>
             <div className="stroke-line mx-auto"></div>
-            <div class="anchor" id="services"></div>
+            <div className="anchor" id="services"></div>
             <br />
         </div>
         <div className="row m-0">

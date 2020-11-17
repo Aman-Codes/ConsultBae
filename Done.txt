@@ -1,0 +1,8 @@
+Nav link bold, underline
+fixed navbar
+navbar shadow
+button shadow
+internal hyperlink
+card of equal width and height at all screen size
+added svg background
+Added spacing

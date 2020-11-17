@@ -3,7 +3,7 @@ import React from 'react';
 function Services() {
     return (
         <section className="text-center side-margin top-margin">            
-            <div class="anchor" id="services"></div>
+            <div className="anchor" id="services"></div>
             <h1> Our services</h1>
             <div className="stroke-line mx-auto"></div>
             <br />

@@ -2,6 +2,11 @@ const CareerCounsel = require('../models/CareerCounsel');
 const ChampionCV = require('../models/ChampionCV');
 const Recruitment = require('../models/Recruitment');
 const Contact = require('../models/Contact');
+const nodemailer = require("nodemailer");
+
+const senderEmail = require('../config/keys').senderEmail;
+const senderPassword = require('../config/keys').senderPassword;
+const receiverEmail = require('../config/keys').receiverEmail;
 
 const multer = require("multer");
 var AWS = require("aws-sdk");
@@ -69,10 +74,40 @@ exports.championcv = (req, res) => {
                         });
                     }      
                     else{
-                        console.log("Successfully Created ChampionCV");
-                        res.json({
-                            success: true,
-                            message: "Successfully Created ChampionCV"
+                        var transporter = nodemailer.createTransport({
+                            service: 'gmail',
+                            auth: {
+                              user: senderEmail,
+                              pass: senderPassword
+                            }
+                          });
+        
+                        let emailmessage = "HI you have a new ChampionCV request from " + item.name + 
+                        ".\nUser Details: \nName: " + item.name + 
+                        "\nEmail: " + item.email+ 
+                        "\nPhone Number: " + item.phone+
+                        "\nResume Link: " + item.fileUrl;
+        
+                        var mailOptions = {
+                            from: senderEmail,
+                            to: receiverEmail,
+                            subject: 'New ChampionCV Request',
+                            text: emailmessage,
+                        };
+        
+                        transporter.sendMail(mailOptions, function(error, info){
+                            if (error) 
+                            {
+                              console.log(error);
+                            } 
+                            else 
+                            {
+                                console.log("Successfully Created ChampionCV");
+                                res.json({
+                                    success: true,
+                                    message: "Successfully Created ChampionCV"
+                                });
+                            }
                         });
                     }
                 });
@@ -109,11 +144,42 @@ exports.careercounsel = (req, res) => {
                 });
             }      
             else{
-                console.log("Successfully Created CareerCounsel");
-                res.json({
-                    success: true,
-                    message: "Successfully Created CareerCounsel"
+                var transporter = nodemailer.createTransport({
+                    service: 'gmail',
+                    auth: {
+                      user: senderEmail,
+                      pass: senderPassword
+                    }
+                  });
+
+                let emailmessage = "HI you have a new Career Counsel request from " + item.name + 
+                ".\nUser Details: \nName: " + item.name + 
+                "\nEmail: " + item.email+ 
+                "\nPhone Number: " + item.phone+
+                "\nQuery: " + item.query;
+
+                var mailOptions = {
+                    from: senderEmail,
+                    to: receiverEmail,
+                    subject: 'New Career Counsel Request',
+                    text: emailmessage,
+                };
+
+                transporter.sendMail(mailOptions, function(error, info){
+                    if (error) 
+                    {
+                      console.log(error);
+                    } 
+                    else 
+                    {
+                        console.log("Successfully Created CareerCounsel");
+                        res.json({
+                            success: true,
+                            message: "Successfully Created CareerCounsel"
+                        });
+                    }
                 });
+
             }
         });
     }
@@ -148,10 +214,40 @@ exports.recruitment = (req, res) => {
                 });
             }      
             else{
-                console.log("Succesfully Created Recruitment");
-                res.json({
-                    success: true,
-                    message: "Succesfully Created Recruitment"
+                var transporter = nodemailer.createTransport({
+                    service: 'gmail',
+                    auth: {
+                      user: senderEmail,
+                      pass: senderPassword
+                    }
+                  });
+
+                let emailmessage = "HI you have a new Recruitment request from " + item.name + 
+                ".\nUser Details: \nName: " + item.name + 
+                "\nEmail: " + item.email+ 
+                "\nPhone Number: " + item.phone+
+                "\nCompany: " + item.company;
+
+                var mailOptions = {
+                    from: senderEmail,
+                    to: receiverEmail,
+                    subject: 'New Recruitment Request',
+                    text: emailmessage,
+                };
+
+                transporter.sendMail(mailOptions, function(error, info){
+                    if (error) 
+                    {
+                      console.log(error);
+                    } 
+                    else 
+                    {
+                        console.log("Successfully Created Recruitment");
+                        res.json({
+                            success: true,
+                            message: "Successfully Created Recruitment"
+                        });
+                    }
                 });
             }
         });
@@ -186,10 +282,39 @@ exports.contact = (req, res) => {
                 });
             }      
             else{
-                console.log("Successfully Created Contact");
-                res.json({
-                    success: true,
-                    message: "Successfully Created Contact"
+                var transporter = nodemailer.createTransport({
+                    service: 'gmail',
+                    auth: {
+                      user: senderEmail,
+                      pass: senderPassword
+                    }
+                  });
+
+                let emailmessage = "HI you have a new Conatct request from " + item.name + 
+                ".\nUser Details: \nName: " + item.name + 
+                "\nEmail: " + item.email+ 
+                "\nMessage: " + item.message;
+
+                var mailOptions = {
+                    from: senderEmail,
+                    to: receiverEmail,
+                    subject: 'New Conatct Request',
+                    text: emailmessage,
+                };
+
+                transporter.sendMail(mailOptions, function(error, info){
+                    if (error) 
+                    {
+                      console.log(error);
+                    } 
+                    else 
+                    {
+                        console.log("Successfully Created Conatct");
+                        res.json({
+                            success: true,
+                            message: "Successfully Created Conatct"
+                        });
+                    }
                 });
             }
         });
