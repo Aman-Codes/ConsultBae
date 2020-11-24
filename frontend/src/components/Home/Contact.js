@@ -106,7 +106,7 @@ function Contact() {
                             Gurgaon, Haryana, India
                             <br /> <br />
                             <i className="fa fa-phone" aria-hidden="true"></i> &emsp;
-                            +91-9310575687
+                            91-9310705018 
                             <br /> <br />
                             <i className="fa fa-envelope" aria-hidden="true"></i>  &emsp;
                             contact@consultbae.com

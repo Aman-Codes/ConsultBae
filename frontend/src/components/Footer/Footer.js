@@ -33,7 +33,7 @@ function Footer() {
                 </div>
                 <div className="col-md-4 px-md-5">
                     <h1 className="footer-heading">Contact us</h1>
-                    <i className="fa fa-phone" aria-hidden="true"></i> +91-9310575687 
+                    <i className="fa fa-phone" aria-hidden="true"></i> 91-9310705018 
                     <br />
                     <i className="fa fa-envelope-o" aria-hidden="true"></i> contact@consultbae.com
                     <br />
