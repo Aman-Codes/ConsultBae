@@ -42,8 +42,14 @@ function Footer() {
                         <a href="https://www.linkedin.com/company/consultbae/">
                             <i className="fa fa-linkedin" aria-hidden="true"></i>
                         </a> &emsp;
-                        <i className="fa fa-instagram" aria-hidden="true"></i> &emsp;
-                        <i className="fa fa-facebook" aria-hidden="true"></i> &emsp;
+                        <a href="https://www.instagram.com/consultbae.official/">
+                            <i className="fa fa-instagram" aria-hidden="true"></i>
+                        </a> &emsp;
+                        <a href="https://www.facebook.com/ConsultBae">
+                            <i className="fa fa-facebook" aria-hidden="true"></i>
+                        </a> &emsp;
+                        {/* <i className="fa fa-instagram" aria-hidden="true"></i> &emsp;
+                        <i className="fa fa-facebook" aria-hidden="true"></i> &emsp; */}
                         <i className="fa fa-twitter" aria-hidden="true"></i> &emsp;
                     </div>
                 </div>   
