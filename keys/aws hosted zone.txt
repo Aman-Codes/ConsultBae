@@ -1,0 +1,44 @@
+
+Filter records by property or value
+
+Record name
+Type
+Routing policy
+Differentiator
+Alias
+Value/Route traffic to
+TTL (seconds)
+Health check
+Evaluate target health
+Record ID
+
+consultbae.com	A	Simple	-	Yes	
+d16mubvlog0vai.cloudfront.net.
+-	-	No	-
+
+consultbae.com	MX	Simple	-	No	
+1 ASPMX.L.GOOGLE.COM.
+5 ALT1.ASPMX.L.GOOGLE.COM.
+5 ALT2.ASPMX.L.GOOGLE.COM.
+10 ALT3.ASPMX.L.GOOGLE.COM.
+10 ALT4.ASPMX.L.GOOGLE.COM.
+300	-	-	-
+
+consultbae.com	NS	Simple	-	No	
+ns-754.awsdns-30.net.
+ns-32.awsdns-04.com.
+ns-1534.awsdns-63.org.
+ns-1765.awsdns-28.co.uk.
+172800	-	-	-
+
+consultbae.com	SOA	Simple	-	No	
+ns-754.awsdns-30.net. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400
+900	-	-	-
+
+_38b47bf33a825dc62896cfc174c8b33d.consultbae.com	CNAME	Simple	-	No	
+_4ffabdacd9a5ba5adf67a1433f8ed8a6.wggjkglgrm.acm-validations.aws.
+300	-	-	-
+
+www.consultbae.com	CNAME	Simple	-	Yes	
+_38b47bf33a825dc62896cfc174c8b33d.consultbae.com.
+-	-
