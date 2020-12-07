@@ -26,7 +26,7 @@ function RecruitmentPopup(props) {
         event.preventDefault();
         axios({
             method: 'POST',
-            url: `${process.env.REACT_APP_API}/api/recruitment`,
+            url: `https://formspree.io/f/mnqogaqj`,
             data: {        
                 name,
                 email,

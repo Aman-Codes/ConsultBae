@@ -10,36 +10,36 @@ function ChampionCVPopup(props) {
         name: '',
         email:'',
         phone: '',
-        file: null,
+        cvlink: '',
     });
     const {
         name,
         email,
         phone,
-        file
+        cvlink
     } = values;
     const handleChange = name => event => {
         setValues({ ...values, [name]: event.target.value });
     };
 
-    const handleSelectedFile = e => {
-        e.preventDefault();
-        setValues({
-            ...values,
-            file: e.target.files[0]
-        });      
-    };
+    // const handleSelectedFile = e => {
+    //     e.preventDefault();
+    //     setValues({
+    //         ...values,
+    //         file: e.target.files[0]
+    //     });      
+    // };
 
     const clickSubmit = event => {
         event.preventDefault();
-        const data = new FormData();    
-        data.append("file", file );    
+        const data = new FormData();
         data.append("name", name );
         data.append("email", email);
         data.append("phone", phone );
+        data.append("cvlink", cvlink ); 
         axios({
             method: 'POST',
-            url: `${process.env.REACT_APP_API}/api/championcv`,
+            url: `https://formspree.io/f/xjvpabvy`,
             data: data
         })
             .then(response => {
@@ -95,6 +95,16 @@ function ChampionCVPopup(props) {
                                 </FormGroup>
                                 <FormGroup>
                                     <Input 
+                                        type="text" 
+                                        name="cvlink" 
+                                        id="cvlink" 
+                                        placeholder="CV Drive Link" 
+                                        defaultValue={cvlink}
+                                        onChange={handleChange('cvlink')}
+                                    />
+                                </FormGroup>
+                                {/* <FormGroup>
+                                    <Input 
                                         type="tel" 
                                         name="phone" 
                                         id="phone" 
@@ -102,7 +112,7 @@ function ChampionCVPopup(props) {
                                         defaultValue={phone}
                                         onChange={handleChange('phone')}
                                     />
-                                </FormGroup>
+                                </FormGroup> */}
                                 {/* <FormGroup>
                                     <Label for="file"> Upload Resume</Label>
                                     <Input 
@@ -115,10 +125,10 @@ function ChampionCVPopup(props) {
                                 </FormGroup> */}
                             </Form>
                             <br />
-                            <label for="file-upload" class="custom-file-upload btn btn-primary rounded-button">
+                            {/* <label for="file-upload" class="custom-file-upload btn btn-primary rounded-button">
                                 <i class="fa fa-cloud-upload"></i> Upload Resume
                             </label>
-                            <input id="file-upload" type="file"  onChange={handleSelectedFile}  />
+                            <input id="file-upload" type="file"  onChange={handleSelectedFile}  /> */}
                             {/* <Button outline color="primary" className="rounded-button">
                                 Upload Resume <i className="fa fa-cloud-upload" aria-hidden="true"></i>
                             </Button>{' '} */}

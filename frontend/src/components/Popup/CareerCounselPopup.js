@@ -29,7 +29,7 @@ function CareerCounselPopup(props) {
         event.preventDefault();
         axios({
             method: 'POST',
-            url: `${process.env.REACT_APP_API}/api/careercounsel`,
+            url: `https://formspree.io/f/mdopwnog`,
             data: {        
                 name,
                 email,

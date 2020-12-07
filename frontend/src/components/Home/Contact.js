@@ -26,7 +26,7 @@ function Contact() {
         event.preventDefault();
         axios({
             method: 'POST',
-            url: `${process.env.REACT_APP_API}/api/contact`,
+            url: `https://formspree.io/f/mwkwreke`,
             data: {        
                 name,
                 email,
