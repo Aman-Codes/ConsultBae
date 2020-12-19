@@ -102,6 +102,7 @@ function ChampionCVPopup(props) {
                                         defaultValue={cvlink}
                                         onChange={handleChange('cvlink')}
                                     />
+                                    <p className="text-grey">*Incase you don't have CV drive link, you can also email your existing CV at contact@consultbae.com with Subject: Champion CV - "Your Name"</p>
                                 </FormGroup>
                                 {/* <FormGroup>
                                     <Input 
